@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #3d7b66;
+    padding: 5vh;
+}
+
+header .navigation h1{
+    font-size: 5vh;
+    position: relative;
+    left: 1vw;
+}
+
+header .navigation h1 a {
+    font-size: 5vh;
+    color: #f0cf65;
+}
+
+.search-bar {
+    position: relative;
+    left: 8vw;
+}
+
+.search-bar i {
+    background-color: #f0cf65;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #295245;
+}
+
+.search-bar i:hover {
+    background-color: #f1d57b;
+    color: #468974;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#search-bar {
+    width: 65vh;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.minhaconta {
+    position: relative;
+    left: 16vw;
+    display: flex;
+    align-items: center;
+}
+
+.minhaconta i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.minhaconta a {
+    text-decoration: none;
+}
+
+.minhaconta a:visited,
+.minhaconta a:link {
+    color: #f0cf65;
+}
+
+.minhaconta a:hover,
+.minhaconta i:hover,
+.carrinho i:hover {
+    color: #d3b759;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.carrinho {
+    position: relative;
+    left: 24vw;
+    display: flex;
+    align-items: center;
+}
+
+.carrinho p {
+    font-size: 20px;
+    
+}
+
+.carrinho i {
+    font-size: 5vh;
+    margin-left: 1vw;
+}
+
+
