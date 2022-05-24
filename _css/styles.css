@@ -11,7 +11,7 @@ body {
     background-color: #ffffff;
 }
 
-header .navigation {
+header {
     display: flex;
     align-items: center;
     color: white;
@@ -19,13 +19,13 @@ header .navigation {
     padding: 5vh;
 }
 
-header .navigation h1{
+header h1{
     font-size: 5vh;
     position: relative;
     left: 1vw;
 }
 
-header .navigation h1 a {
+header h1 a {
     font-size: 5vh;
     color: #f0cf65;
 }
@@ -52,7 +52,7 @@ header .navigation h1 a {
 
 #search-bar {
     width: 65vh;
-    height: 5vh;
+    height: 6.6vh;
     padding: 5px;
     border-radius: 5px;
 }
@@ -88,19 +88,79 @@ header .navigation h1 a {
 
 .carrinho {
     position: relative;
-    left: 24vw;
+    left: 22vw;
     display: flex;
     align-items: center;
 }
 
 .carrinho p {
     font-size: 20px;
-    
 }
 
 .carrinho i {
     font-size: 5vh;
     margin-left: 1vw;
 }
+
+
+.categorias {
+    display: flex;
+    background-color: #d3b759;
+    color: #295245;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.categorias li {
+    list-style-type: none;
+    padding: 6px 50px 6px 50px;
+    font-size: 20px;
+    border-radius: 2px;
+    
+}
+
+.categorias li:hover {
+    background-color: #55ab8e;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#cachorro:hover + .dropdown-content-cachorro {
+    display: flex;
+}
+
+.dropdown-content-cachorro {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: #e6e6e6;
+    min-width: 160px;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-cachorro ul {
+    list-style-type: none;
+    padding: 0px 40px 0px 40px;
+}
+
+.dropdown-content-cachorro ul li {
+    padding-top: 5px;
+}
+
+.dropdown-content-cachorro ul a:visited,
+.dropdown-content-cachorro ul a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
 
 
