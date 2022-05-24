@@ -17,6 +17,7 @@ header {
     color: white;
     background-color: #3d7b66;
     padding: 5vh;
+    z-index: 1;
 }
 
 header h1{
@@ -102,38 +103,52 @@ header h1 a {
     margin-left: 1vw;
 }
 
+nav {
+    display: flex;
+}
 
 .categorias {
-    display: flex;
     background-color: #d3b759;
     color: #295245;
     font-weight: 700;
-    justify-content: center;
 }
 
-.categorias li {
-    list-style-type: none;
-    padding: 6px 50px 6px 50px;
+.categorias {
+    width: 182.85px;
+    text-align: center;
+    padding: 6px 0px 6px 0px;
     font-size: 20px;
-    border-radius: 2px;
-    
+
 }
 
-.categorias li:hover {
-    background-color: #55ab8e;
-    color: #f3f3f3;
+.categorias:hover {
+    background-color: rgb(249, 206, 62);
+    color: #172d26;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
-#cachorro:hover + .dropdown-content-cachorro {
+.dropdown-cachorro:hover .dropdown-content-cachorro,
+.dropdown-gato:hover .dropdown-content-gato,
+.dropdown-hamster:hover .dropdown-content-hamster,
+.dropdown-banhoetosa:hover .dropdown-content-banhoetosa,
+.dropdown-passaros:hover .dropdown-content-passaros,
+.dropdown-outros:hover .dropdown-content-outros,
+.dropdown-casa:hover .dropdown-content-casa {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.dropdown-content-cachorro {
+.dropdown-content-cachorro,
+.dropdown-content-gato,
+.dropdown-content-hamster,
+.dropdown-content-banhoetosa,
+.dropdown-content-passaros,
+.dropdown-content-outros,
+.dropdown-content-casa {
     display: none;
     position: absolute;
-    padding: 20px;
+    padding: 0px 0px 20px 0px;
     border-radius: 2px;
     background-color: #e6e6e6;
     min-width: 160px;
@@ -142,17 +157,41 @@ header h1 a {
     z-index: 1;
 }
 
-.dropdown-content-cachorro ul {
+.dropdown-content-cachorro ul,
+.dropdown-content-gato ul,
+.dropdown-content-hamster ul,
+.dropdown-content-banhoetosa ul,
+.dropdown-content-passaros ul,
+.dropdown-content-outros ul,
+.dropdown-content-casa ul {
     list-style-type: none;
-    padding: 0px 40px 0px 40px;
+    padding: 35px 40px 0px 40px;
 }
 
-.dropdown-content-cachorro ul li {
+.dropdown-content-cachorro ul li,
+.dropdown-content-gato ul li,
+.dropdown-content-hamster ul li,
+.dropdown-content-banhoetosa ul li,
+.dropdown-content-passaros ul li,
+.dropdown-content-outros ul li,
+.dropdown-content-casa ul li {
     padding-top: 5px;
 }
 
 .dropdown-content-cachorro ul a:visited,
-.dropdown-content-cachorro ul a:link {
+.dropdown-content-cachorro ul a:link,
+.dropdown-content-gato ul a:visited,
+.dropdown-content-gato ul a:link,
+.dropdown-content-hamster ul a:visited,
+.dropdown-content-hamster ul a:link,
+.dropdown-content-banhoetosa ul a:visited,
+.dropdown-content-banhoetosa ul a:link,
+.dropdown-content-passaros ul a:visited,
+.dropdown-content-passaros ul a:link,
+.dropdown-content-outros ul a:visited,
+.dropdown-content-outros ul a:link,
+.dropdown-content-casa ul a:visited,
+.dropdown-content-casa ul a:link {
     color: black;
     text-decoration: none;
 }
