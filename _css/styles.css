@@ -26,9 +26,14 @@ header h1{
     left: 1vw;
 }
 
-header h1 a {
+header h1 span {
     font-size: 5vh;
     color: #f0cf65;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 .search-bar {
@@ -108,25 +113,18 @@ nav {
 }
 
 .categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #d3b759;
     color: #295245;
     font-weight: 700;
-}
-
-.categorias {
     width: 182.85px;
     text-align: center;
     padding: 6px 0px 6px 0px;
     font-size: 20px;
-
 }
 
-.categorias:hover {
-    background-color: rgb(249, 206, 62);
-    color: #172d26;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
 
 .dropdown-cachorro:hover .dropdown-content-cachorro,
 .dropdown-gato:hover .dropdown-content-gato,
@@ -137,6 +135,10 @@ nav {
 .dropdown-casa:hover .dropdown-content-casa {
     display: flex;
     flex-wrap: wrap;
+    top: 144px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
 }
 
 .dropdown-content-cachorro,
@@ -147,15 +149,33 @@ nav {
 .dropdown-content-outros,
 .dropdown-content-casa {
     display: none;
-    position: absolute;
-    padding: 0px 0px 20px 0px;
+    position: fixed;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
     border-radius: 2px;
     background-color: #e6e6e6;
     min-width: 160px;
     max-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: -1;
 }
+
+.dropdown-cachorro:hover .categorias.cachorro,
+.dropdown-gato:hover .categorias.gato,
+.dropdown-hamster:hover .categorias.hamster,
+.dropdown-banhoetosa:hover .categorias.banhoetosa,
+.dropdown-passaros:hover .categorias.passaros,
+.dropdown-outros:hover .categorias.outros,
+.dropdown-casa:hover .categorias.casa {
+    height: 50px;
+    color: #172d26;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(249, 206, 62);
+}
+
+
 
 .dropdown-content-cachorro ul,
 .dropdown-content-gato ul,
@@ -178,6 +198,17 @@ nav {
     padding-top: 5px;
 }
 
+.dropdown-content-cachorro ul li a:hover,
+.dropdown-content-gato ul li a:hover,
+.dropdown-content-hamster ul li a:hover,
+.dropdown-content-banhoetosa ul li a:hover,
+.dropdown-content-passaros ul li a:hover,
+.dropdown-content-outros ul li a:hover,
+.dropdown-content-casa ul li a:hover {
+    background-color: rgb(249, 206, 62);
+    transition: 0.2s ease;
+}
+
 .dropdown-content-cachorro ul a:visited,
 .dropdown-content-cachorro ul a:link,
 .dropdown-content-gato ul a:visited,
@@ -194,6 +225,10 @@ nav {
 .dropdown-content-casa ul a:link {
     color: black;
     text-decoration: none;
+    padding: 2px 8px 2px 8px;
+    border-radius: 14px;
+    position: relative;
+    right: 8px;
 }
 
 
