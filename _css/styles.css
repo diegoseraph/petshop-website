@@ -9,6 +9,7 @@
 
 body {
     background-color: #ffffff;
+    display: block;
 }
 
 header {
@@ -35,6 +36,176 @@ header h1 span {
 header a {
     text-decoration: none;
     color: white;
+}
+
+footer {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container div {
+    margin: 0px 30px 0px 30px;
+    padding: 0px 10px 10px 10px;
+    max-width: 180px;
+    min-width: 180px; 
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-container div li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-container div a {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 0.671);
+    transition: 0.5s ease;
+}
+
+.footer-container div a:hover {
+    color: rgb(20, 20, 20);
+}
+
+.footer-container div h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+.footer-container .content5 ul {
+    display: flex;
+    min-height: 80px;
+    min-width: 100%;
+    justify-content: center;
+}
+
+
+
+.footer-container .content5 ul li i{
+    font-size: 15px;
+    text-align: center;
+    min-width: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 5px 5px 5px;
+    transition: 0.3s ease;
+}
+
+.footer-container .content5 ul li i:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.fa-facebook-f:hover {
+    background-color: #1672E6;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.fa-twitter:hover {
+    background-color: #1C99E6;
+}
+
+.fa-youtube:hover {
+    background-color: #FF0000;
+}
+
+.modos-de-pagamento img{
+    width: 100vh;
+    position: relative;
+    right: 280px;
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.687);
+    position: relative;
+    top: 30px;
+}
+
+
+.contate-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 475px;
+    width: 100%;
+    height: 200px;
+    background-color: #3d7b66;
+}
+
+.contate-nos h1 {
+    margin-right: 10vh;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #ffff;
+}
+
+.contate-nos form {
+    display: flex;
+    height: 45px;
+}
+
+.contate-nos form input{
+    margin-left: 10px;
+    width: 50vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.5s ease;
+}
+
+.contate-nos form input:hover,
+#btnCadastrar:hover {
+    transform: translateY(-5px);
+}
+
+#btnCadastrar:hover {
+    background-color: #d3b55a;
+    color: #0d1a16;
+}
+
+#btnCadastrar {
+    background-color: #f4d26a;
+    font-weight: 600;
+    color: #1d3a30;
+    margin-left: 10vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.5s ease;
+}
+
+.testando {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    margin-top: 475px;
+    z-index: -1;
 }
 
 .search-bar {
@@ -127,47 +298,6 @@ nav {
     z-index: 2;
 }
 
-nav {
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown-cachorro:hover .dropdown-content-cachorro,
-.dropdown-gato:hover .dropdown-content-gato,
-.dropdown-hamster:hover .dropdown-content-hamster,
-.dropdown-banhoetosa:hover .dropdown-content-banhoetosa,
-.dropdown-passaros:hover .dropdown-content-passaros,
-.dropdown-outros:hover .dropdown-content-outros,
-.dropdown-casa:hover .dropdown-content-casa {
-    display: flex;
-    flex-wrap: wrap;
-    top: 36px;
-    left: 0px;
-    right: 0px;
-    padding-bottom: 50px;
-    z-index: 1;
-}
-
-.dropdown-content-cachorro,
-.dropdown-content-gato,
-.dropdown-content-hamster,
-.dropdown-content-banhoetosa,
-.dropdown-content-passaros,
-.dropdown-content-outros,
-.dropdown-content-casa {
-    display: none;
-    position: absolute;
-    justify-content: center;
-    padding: 0px 0px 0px 0px;
-    border-radius: 2px;
-    background-color: #e6e6e6;
-    min-width: 160px;
-    max-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-
-
 .dropdown-cachorro:hover .categorias.cachorro,
 .dropdown-gato:hover .categorias.gato,
 .dropdown-hamster:hover .categorias.hamster,
@@ -182,10 +312,49 @@ nav {
     border-bottom-left-radius: 10px;
     background-color: rgb(249, 206, 62);
     position: sticky;
-    z-index: 2;
+    
 }
 
+nav {
+    position: absolute;
+    z-index: 1;
+}
 
+.dropdown-cachorro:hover .dropdown-content-cachorro,
+.dropdown-gato:hover .dropdown-content-gato,
+.dropdown-hamster:hover .dropdown-content-hamster,
+.dropdown-banhoetosa:hover .dropdown-content-banhoetosa,
+.dropdown-passaros:hover .dropdown-content-passaros,
+.dropdown-outros:hover .dropdown-content-outros,
+.dropdown-casa:hover .dropdown-content-casa {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    max-width: 168vh;
+    top: 36px;
+}
+
+.dropdown-hamster:hover .dropdown-content-hamster,
+.dropdown-passaros:hover .dropdown-content-passaros,
+.dropdown-outros:hover .dropdown-content-outros,
+.dropdown-casa:hover .dropdown-content-casa {
+    left: 51vh;
+}
+
+.dropdown-content-cachorro,
+.dropdown-content-gato,
+.dropdown-content-hamster,
+.dropdown-content-banhoetosa,
+.dropdown-content-passaros,
+.dropdown-content-outros,
+.dropdown-content-casa {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
 .dropdown-content-cachorro ul,
 .dropdown-content-gato ul,
@@ -195,8 +364,12 @@ nav {
 .dropdown-content-outros ul,
 .dropdown-content-casa ul {
     list-style-type: none;
-    padding: 35px 40px 0px 40px;
+    min-height: 200px;
+    width: 40vh;
+    padding: 10px;
+    margin: 5px;
 }
+
 
 .dropdown-content-cachorro ul li,
 .dropdown-content-gato ul li,
@@ -270,13 +443,6 @@ nav {
     position: absolute;
 }
 
-
-.teste {
-    width: 100%;
-    height: 500px;
-    background-color: #3d7b66;
-}
-
 .prev,
 .next {
     position: absolute;
@@ -335,3 +501,23 @@ nav {
 #bolinha1 {
     background-color: rgb(29, 29, 29);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
