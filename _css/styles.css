@@ -200,14 +200,6 @@ footer p {
     transition: 0.5s ease;
 }
 
-.testando {
-    width: 100%;
-    height: 1000px;
-    background-color: black;
-    margin-top: 475px;
-    z-index: -1;
-}
-
 .search-bar {
     position: relative;
     left: 8vw;
@@ -296,6 +288,7 @@ nav {
     padding: 6px 0px 6px 0px;
     font-size: 20px;
     z-index: 2;
+    transition: 0.3s ease;
 }
 
 .dropdown-cachorro:hover .categorias.cachorro,
@@ -305,14 +298,9 @@ nav {
 .dropdown-passaros:hover .categorias.passaros,
 .dropdown-outros:hover .categorias.outros,
 .dropdown-casa:hover .categorias.casa {
-    height: 50px;
     color: #172d26;
     cursor: pointer;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     background-color: rgb(249, 206, 62);
-    position: sticky;
-    
 }
 
 nav {
@@ -320,6 +308,7 @@ nav {
     z-index: 1;
 }
 
+/*
 .dropdown-cachorro:hover .dropdown-content-cachorro,
 .dropdown-gato:hover .dropdown-content-gato,
 .dropdown-hamster:hover .dropdown-content-hamster,
@@ -327,6 +316,7 @@ nav {
 .dropdown-passaros:hover .dropdown-content-passaros,
 .dropdown-outros:hover .dropdown-content-outros,
 .dropdown-casa:hover .dropdown-content-casa {
+    
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
@@ -334,11 +324,52 @@ nav {
     top: 36px;
 }
 
+/*
 .dropdown-hamster:hover .dropdown-content-hamster,
 .dropdown-passaros:hover .dropdown-content-passaros,
 .dropdown-outros:hover .dropdown-content-outros,
 .dropdown-casa:hover .dropdown-content-casa {
     left: 51vh;
+}
+*/
+
+.block-content {
+    display: none;
+}
+
+.block p {
+    font-size: 20.5px;
+    text-align: center;
+    width: 180.5px;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+.block p:hover {
+    background-color: #e7e7e7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    transform: translateX(10px);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.224);
+}
+
+.block.alimentacao:hover {
+
+}
+
+
+.dropdown-cachorro:hover .dropdown-content-cachorro,
+.dropdown-gato:hover .dropdown-content-gato,
+.dropdown-hamster:hover .dropdown-content-hamster,
+.dropdown-banhoetosa:hover .dropdown-content-banhoetosa,
+.dropdown-passaros:hover .dropdown-content-passaros,
+.dropdown-outros:hover .dropdown-content-outros,
+.dropdown-casa:hover .dropdown-content-casa
+ {
+    display: flex;
 }
 
 .dropdown-content-cachorro,
@@ -350,12 +381,15 @@ nav {
 .dropdown-content-casa {
     display: none;
     position: absolute;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #e6e6e6;
+    flex-direction: column;
+    background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
+
+/*
 .dropdown-content-cachorro ul,
 .dropdown-content-gato ul,
 .dropdown-content-hamster ul,
@@ -414,6 +448,7 @@ nav {
     right: 8px;
 }
 
+*/
 .slideshow {
     position: absolute;
     top: 330px;
@@ -502,9 +537,64 @@ nav {
     background-color: rgb(29, 29, 29);
 }
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2000px;
+    margin-top: 475px;
+    z-index: -1;
+}
 
+.page-content {
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Retirar quando tiver com a página completa */
+}
 
+.promocoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    padding: 15px;
+}
 
+.promocoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 100%;
+    margin: 0px 10px 0px 10px;
+    padding: 15px;
+    position: relative;
+    color: #162c25d0;
+    border: 1px solid #28795f9e;
+    border-radius: 5px;
+}
+
+.promocoes h2 {
+    text-transform: uppercase;
+
+}
+
+.descricao-container {
+    display: block;
+    margin-left: 10px;
+}
+
+.descricao {
+    margin-top: 5px;
+}
+
+.promocoes i {
+    font-size: 50px;
+    color: #287960;
+}
 
 
 
